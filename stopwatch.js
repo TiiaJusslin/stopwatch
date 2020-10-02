@@ -1,4 +1,5 @@
-window.onload = function () {
+window.onload = function() {
+
     var seconds = 00; 
     var tens = 00;
     var appendTens = document.getElementById("tens");
@@ -6,14 +7,14 @@ window.onload = function () {
     var buttonStart = document.getElementById('button-start');
     var buttonStop = document.getElementById('button-stop');
     var buttonReset = document.getElementById('button-reset');
-    var interval ;
-
-    buttonStart.onclick = function () {
-        clreaInterval(Interval); 
-        interval = setInterval(startTimer, 10);
-    }
+    var Interval;
 
     buttonStart.onclick = function() {
+        clearInterval(Interval); 
+        Interval = setInterval(startTimer, 10);
+    }
+
+    buttonStop.onclick = function() {
         clearInterval(Interval);
     }
 
@@ -44,3 +45,4 @@ window.onload = function () {
         }
     }
 }
+
