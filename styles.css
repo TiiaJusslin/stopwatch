@@ -1,5 +1,17 @@
 body {
-    background-color: orange; 
-    color: white; 
+    background-color: #eeecda; 
+    color: #6a2c70; 
+    text-align: center;
 }
-
+button {
+    background-color: #b83b5e;
+    color: #eeecda; 
+    padding: 10px;
+    margin: 5px;
+    border: #b83b5e solid 1px;
+    border-radius: 10%;
+    text-align: center;
+}
+span {
+    font-size: larger;
+}
